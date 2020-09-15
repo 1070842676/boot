@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+server:
+  port: 8080
+  servlet:
+    context-path: /demo
+
+
+
+
+#jwt相关配置
+config:
+  jwt:
+    secret: abc555
+    expire: 3600
+    header: token
